@@ -1,6 +1,9 @@
 from django.http import HttpResponse
 
-def home(request):
+def home(request, name=None):
     #print "hello world"
     #print request
-    return HttpResponse("Hello World !")
+    if name:
+        return HttpResponse("Hello %s " % name)
+    else:
+        return HttpResponse("Hello World !")
