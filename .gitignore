@@ -2,6 +2,10 @@
 *.pot
 *.pyc
 local_settings.py
-*
-!tracker
-!.gitignore
+*.bat
+*.ps1
+activate
+activate_this.py
+*.exe
+django-admin.py
+
